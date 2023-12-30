@@ -1,0 +1,44 @@
+import java.util.*;
+public class Practise {
+ 
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while (t-->0) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			int c = sc.nextInt();
+			// int arr [] = {a,b,c};
+			int k1=a;
+			int k2=b;
+			int k3=c;
+			int c1=0;
+			int c2=0;
+			int c3=0;
+			if (k1==b || k1== c) {
+				c1++;
+				
+			}
+			if (k2==a || k2== c) {
+				c2++;
+				
+			}
+			if (k3==a || k3== b) {
+				c3++;
+				
+			}
+			if (c1==0) {
+				System.out.println(a);
+			}
+			if (c2==0) {
+				System.out.println(b);
+			}
+			if (c3==0) {
+				System.out.println(c);
+			}
+ 
+		}
+ 
+		
+	}
+}
